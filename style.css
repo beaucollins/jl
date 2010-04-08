@@ -5,6 +5,7 @@ Description: jeremyleffel.com wp theme
 Author: Beau Collins
 Version: &alpha;
 Tags: jeremyleffel photography
+Template: twentyten
 */
 
 
@@ -72,7 +73,7 @@ DESCRIPTION: Two-column fixed layout with one sidebar right of content
 	width: 100%;
 }
 #content {
-	margin: 0 280px 0 20px;
+	margin: 0 20px 0 20px;
 }
 #primary,
 #secondary {
@@ -107,12 +108,13 @@ input,
 textarea,
 .page-title span,
 .pingback a.url {
-	font-family: Georgia, "Bitstream Charter", serif;
+	font-family: Helvetica, Arial, sans-serif;
 }
 
 h3#comments-title,
 h3#reply-title,
 #access .menu,
+#access div.menu ul,
 #cancel-comment-reply-link,
 .form-allowed-tags,
 #site-info,
@@ -153,6 +155,7 @@ code {
 
 /* The main theme structure */
 #access .menu-header,
+div.menu,
 #colophon,
 #branding,
 #main,
@@ -161,7 +164,7 @@ code {
 	width: 940px;
 }
 #wrapper {
-	background: #fff;
+  color: #FFF;
 	padding: 0 20px;
 }
 
@@ -195,7 +198,7 @@ code {
 
 /* Main global 'theme' and typographic styles  */
 body {
-	background: #f1f1f1;
+	background: #1E1E1E;
 }
 body, input, textarea {
 	color: #666;
@@ -322,16 +325,16 @@ a:hover {
 	padding: 30px 0 0 0;
 }
 #site-title {
-	float: left;
 	margin: 0 0 18px 0;
-	width: 700px;
 	font-size: 30px;
 	line-height: 36px;
+	text-align: center;
 }
 #site-title a {
-	color: #000;
+	color: #525051;
 	font-weight: bold;
 	text-decoration: none;
+	font-weight: normal;
 }
 #site-description {
 	clear: right;
@@ -354,30 +357,30 @@ a:hover {
 -------------------------------------------------------------- */
 
 #access {
-	background: #000;
 	margin: 0 auto;
 	width: 940px;
 	display:block;
 	float:left;
 }
-#access .menu-header {
+#access .menu-header, div.menu {
 	font-size: 13px;
 	margin-left: 12px;
+	text-align: center;
 }
-#access .menu-header ul {
+#access .menu-header ul, div.menu ul {
 	list-style: none;
 	margin: 0;
 }
-#access .menu-header li {
-	float:left;
+#access .menu-header li, div.menu li {
 	position: relative;
+	display: inline;
 }
 #access a {
-	display:block;
 	text-decoration:none;
 	color:#aaa;
 	padding:0 10px;
 	line-height:38px;
+	font-style: italic;
 }
 #access ul ul {
 	display:none;
@@ -403,8 +406,7 @@ a:hover {
 }
 #access li:hover > a,
 #access ul ul :hover > a {
-	color:#fff;
-	background:#333;
+	color: #6394AE;
 }
 #access ul li:hover > ul {
 	display:block;
@@ -425,7 +427,7 @@ a:hover {
 #content,
 #content input,
 #content textarea {
-	color: #444;
+	color: #CCC;
 	font-size: 16px;
 	line-height: 24px;
 }
@@ -465,7 +467,7 @@ a:hover {
 #content h4,
 #content h5,
 #content h6 {
-	color: #000;
+	color: #999;
 	margin: 0 0 20px 0;
 	line-height: 1.5em;
 }
@@ -510,7 +512,7 @@ a:hover {
 	margin: 0 0 36px 0;
 }
 .page-title span {
-	color: #444;
+	color: #CCC;
 	font-size: 16px;
 	font-style: italic;
 	font-weight: normal;
@@ -520,7 +522,7 @@ a:hover {
 	text-decoration: none;
 }
 .page-title a:active, .page-title a:hover {
-	color: #FF4B33;
+	color: #6CA6B8;
 }
 .entry-title,
 .entry-meta {
@@ -529,20 +531,20 @@ a:hover {
 	margin-right: 68px;
 }
 #content .entry-title {
-	color: #000;
+	color: #CCC;
 	font-size: 21px;
-	font-weight: bold;
+	font-weight: normal;
 	margin-bottom: 0;
 }
 .entry-title a:link, .entry-title a:visited {
-	color:#000;
+	color:#999;
 	text-decoration: none;
 }
 .entry-title a:active, .entry-title a:hover {
-	color: #FF4B33;
+	color: #6CA6B8;
 }
 .entry-meta {
-	color: #888;
+	color: #CCC;
 	font-size: 12px;
 }
 .entry-meta abbr, .entry-utility abbr {
@@ -565,8 +567,8 @@ a:hover {
 	padding: 24px;
 }
 .entry-content fieldset legend {
-	background: #fff;
-	color: #000;
+	background: transparent;
+	color: #CCC;
 	font-weight: bold;
 	padding: 0 24px;
 }
@@ -603,7 +605,7 @@ a:hover {
 	width: 33%;
 }
 .page-link {
-	color: #000;
+	color: #6CA6B8;
 	font-weight:bold;
 	margin:0 0 22px 0;
 	word-spacing:0.5em;
@@ -611,7 +613,7 @@ a:hover {
 .page-link a:link,
 .page-link a:visited {
 	background: #f1f1f1;
-	color:#444;
+	color: #CCC;
 	font-weight:normal;
 	padding:0.5em 0.75em;
 	text-decoration:none;
@@ -621,7 +623,7 @@ a:hover {
 }
 .page-link a:active,
 .page-link a:hover {
-	color: #FF4B33;
+	color: #FFF;
 }
 #entry-author-info {
 	background: #F2F7FC;
@@ -646,7 +648,7 @@ a:hover {
 	margin: 0 0 0 104px;
 }
 #entry-author-info h2 {
-	color: #000;
+	color: #CCC;
 	font-weight: bold;
 	font-size: 100%;
 	margin-bottom: 0;
@@ -661,7 +663,7 @@ a:hover {
 	color: #888;
 }
 .entry-meta a:hover, .entry-utility a:hover {
-	color: #FF4B33;
+	color: #6CA6B8;
 }
 #content .video-player {
 	padding: 0;
@@ -1058,14 +1060,14 @@ h3#reply-title {
 .widget_search label {
 	font-size: 14px;
 	font-weight: bold;
-	color: #222;
+	color: #FFF;
 	display: block;
 }
 .widget-container {
 	margin: 0 0 18px 0;
 }
 .widget-title {
-	color: #222;
+	color: #FFF;
 	font-weight: bold;
 }
 .widget-area a:link, .widget-area a:visited {
@@ -1082,7 +1084,7 @@ h3#reply-title {
 }
 #wp-calendar caption {
 	font-weight: bold;
-	color: #222;
+	color: #CCC;
 	text-align: left;
 	font-size:14px;
 	padding-bottom: 4px;
@@ -1108,7 +1110,7 @@ h3#reply-title {
 	text-align: right;
 }
 .widget_rss a.rsswidget {
-	color: #000;
+	color: #FFF;
 }
 .widget_rss a.rsswidget:hover {
 	color: #FF4B33;
@@ -1146,24 +1148,24 @@ h3#reply-title {
 	margin-bottom: 20px;
 }
 #colophon {
-	border-top: 4px solid #000;
 	margin-top: -4px;
 	padding: 18px 0;
 	overflow: hidden;
 }
 #site-info {
-	font-weight: bold;
+	font-weight: normal;
 }
 #site-info a {
-	color: #000;
+	color: #999;
 	text-decoration: none;
 }
 #site-generator {
 	position: relative;
 	font-style: italic;
+	color: #666;
 }
 #site-generator a {
-	color: #666;
+	color: #999;
 	display:inline-block;
 	text-decoration: none;
 	background: url(images/wordpress.png) center left no-repeat;
@@ -1198,4 +1200,93 @@ code {
 
 #site-description {
 	-webkit-text-size-adjust: none;
+}
+
+
+
+/* =Print Style
+-------------------------------------------------------------- */
+
+@media print {
+	body {
+		background:none !important;
+	}
+	#wrapper {
+		float: none !important;
+		clear: both !important;
+		display: block !important;
+		position: relative !important;
+	}
+	#header {
+		border-bottom: 4pt solid #FFF;
+		padding-bottom: 18pt;
+	}
+	#site-title, #site-description {
+		float: none;
+		margin: 0;
+	}
+	#site-title {
+		font-size: 13pt;
+	}
+	.entry-content {
+		font-size: 14pt;
+		line-height: 1.6em;
+	}
+	.entry-title {
+		font-size: 21pt;
+		line-height: 1.4em;
+	}
+	#access,
+	#branding img,
+	#respond,
+	.comment-edit-link,
+	.edit-link,
+	.navigation,
+	.page-link,
+	.widget-area {
+		display: none !important;
+	}
+	#branding img.wp-post-image {
+		display: block !important;
+	margin-left: -104pt;
+	margin-top: 20pt;
+	border: none;
+	margin-bottom: -24pt;
+	}
+	#container, #header, #footer {
+		margin: 0 0 0 24%;
+		width: 70%;
+	}
+	#content {
+		margin: 24pt 0 0;
+	}
+	.wp-caption p {
+		font-size: 11pt;
+	}
+	#site-info,
+	#site-generator {
+		float: none;
+		width: auto;
+	}
+	#colophon {
+		width: auto;
+	}
+	img#wpstats {
+		display:none
+	}
+	#site-generator a {
+		padding: 0;
+	margin: 0;
+	}
+	#entry-author-info {
+		border: 1px solid #e7e7e7;
+	}
+	#main {
+		margin: 0;
+		width: auto;
+		padding: 0;
+	}
+	.home .sticky {
+		border: none;
+	}
 }
