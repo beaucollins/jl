@@ -164,7 +164,7 @@ div.menu,
 	width: 940px;
 }
 #wrapper {
-  color: #FFF;
+  color: #EBEBEB;
 	padding: 0 20px;
 }
 
@@ -198,7 +198,7 @@ div.menu,
 
 /* Main global 'theme' and typographic styles  */
 body {
-	background: #1E1E1E;
+	background: #787878;
 }
 body, input, textarea {
 	color: #666;
@@ -206,7 +206,7 @@ body, input, textarea {
 	line-height: 18px;
 }
 hr {
-	background-color: #E7E7E7;
+	background-color: #787878;
 	border:0;
 	height: 1px;
 	margin-bottom: 18px;
@@ -269,7 +269,7 @@ blockquote i {
 }
 pre {
 	background: #f7f7f7;
-	color: #222;
+	color: #F9F9F9;
 	line-height: 18px;
 	margin-bottom: 18px;
 	padding: 1.5em;
@@ -331,7 +331,7 @@ a:hover {
 	text-align: center;
 }
 #site-title a {
-	color: #525051;
+	color: #E7E7E7;
 	font-weight: bold;
 	text-decoration: none;
 	font-weight: normal;
@@ -376,7 +376,7 @@ a:hover {
 }
 #access a {
 	text-decoration:none;
-	color:#aaa;
+	color: #E7E7E7;
 	padding:0 10px;
 	line-height:38px;
 	font-style: italic;
@@ -405,7 +405,7 @@ a:hover {
 }
 #access li:hover > a,
 #access ul ul :hover > a {
-	color: #6394AE;
+	color: #80CFFE;
 }
 #access ul li:hover > ul {
 	display:block;
@@ -426,7 +426,7 @@ a:hover {
 #content,
 #content input,
 #content textarea {
-	color: #CCC;
+	color: #DFDFDF;
 	font-size: 16px;
 	line-height: 24px;
 }
@@ -521,7 +521,7 @@ a:hover {
 	text-decoration: none;
 }
 .page-title a:active, .page-title a:hover {
-	color: #6CA6B8;
+	color: #80CFFE;
 }
 .entry-title,
 .entry-meta {
@@ -536,14 +536,14 @@ a:hover {
 	margin-bottom: 0;
 }
 .entry-title a:link, .entry-title a:visited {
-	color:#999;
+	color:#DBDBDB;
 	text-decoration: none;
 }
 .entry-title a:active, .entry-title a:hover {
-	color: #6CA6B8;
+	color: #80CFFE;
 }
 .entry-meta {
-	color: #CCC;
+	color: #CFCFCF;
 	font-size: 12px;
 }
 .entry-meta abbr, .entry-utility abbr {
@@ -653,16 +653,16 @@ a:hover {
 	margin-bottom: 0;
 }
 .entry-utility {
-	color: #888;
+	color: #CCC;
 	font-size: 12px;
 	line-height: 18px;
 	clear: both;
 }
 .entry-meta a, .entry-utility a {
-	color: #888;
+	color: #E0E0E0;
 }
 .entry-meta a:hover, .entry-utility a:hover {
-	color: #6CA6B8;
+	color: #80CFFE;
 }
 #content .video-player {
 	padding: 0;
