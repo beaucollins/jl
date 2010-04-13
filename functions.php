@@ -1,5 +1,8 @@
 <?php
 
+if ( ! isset( $content_width ) )
+	$content_width = 900;
+
 if ( ! function_exists('twentyten_setup')){
   
   function twentyten_setup(){
@@ -23,6 +26,20 @@ if ( ! function_exists('twentyten_setup')){
    $locale_file = TEMPLATEPATH . "/languages/$locale.php";
    if ( is_readable( $locale_file ) )
      require_once( $locale_file );
+   	
+   	// No CSS, just IMG call. The %s is a placeholder for the theme template directory URI.
+  	define( 'HEADER_IMAGE', '%s/images/headers/forestfloor.jpg' );
+  	
+   	// The height and width of your custom header. You can hook into the theme's own filters to change these values.
+  	// Add a filter to twentyten_header_image_width and twentyten_header_image_height to change these values.
+  	define( 'HEADER_IMAGE_WIDTH', apply_filters( 'twentyten_header_image_width',  940 ) );
+  	define( 'HEADER_IMAGE_HEIGHT', apply_filters( 'twentyten_header_image_height',	500 ) );
+  	
+  	// Add a way for the custom header to be styled in the admin panel that controls
+  	// custom headers. See twentyten_admin_header_style(), below.
+  	add_custom_image_header( '', 'twentyten_admin_header_style' );
+  	
+  	
   }
   
 }

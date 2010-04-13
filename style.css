@@ -96,7 +96,7 @@ DESCRIPTION: One centered column with no sidebar
 
 .onecolumn #content {
 	margin: 0 auto;
-	width: 640px;
+	width: 900px;
 }
 
 
@@ -742,7 +742,7 @@ a:hover {
 
 .entry-content img {
 	margin: 0 0 24px 0;
-	max-width: 640px;
+	max-width: 900px;
 }
 .alignleft,
 img.alignleft {
