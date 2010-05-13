@@ -10,23 +10,6 @@
 				<div id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 					<h2 class="entry-title"><?php the_title(); ?></h2>
 
-					<div class="entry-meta">
-						<?php
-							printf(__( '<span class="meta-prep meta-prep-author"> By </span> <span class="author vcard"><a class="url fn n" href="%1$s" title="%2$s">%3$s</a></span>', 'twentyten'),
-								get_author_posts_url( get_the_author_meta( 'ID' ) ),
-								sprintf( esc_attr__( 'View all posts by %s', 'twentyten' ), get_the_author() ),
-								get_the_author()
-							);
-						?>
-						<span class="meta-sep"> | </span>
-						<?php
-							printf( __( '<span class="meta-prep meta-prep-entry-date">Published </span> <span class="entry-date"><abbr class="published" title="%1$s">%2$s</abbr></span>', 'twentyten'),
-								esc_attr( get_the_time() ),
-								get_the_date()
-							);
-						?>
-						<?php edit_post_link( __( 'Edit', 'twentyten' ), "<span class=\"meta-sep\">|</span>\n\t\t\t\t\t\t<span class=\"edit-link\">", "</span>\n\t\t\t\t\t" ); ?>
-					</div><!-- .entry-meta -->
 
 					<div class="entry-content">
 						<div class="entry-attachment">
@@ -50,6 +33,23 @@
 
 					</div><!-- .entry-content -->
 
+					<div class="entry-meta">
+						<?php
+							printf(__( '<span class="meta-prep meta-prep-author"> By </span> <span class="author vcard"><a class="url fn n" href="%1$s" title="%2$s">%3$s</a></span>', 'twentyten'),
+								get_author_posts_url( get_the_author_meta( 'ID' ) ),
+								sprintf( esc_attr__( 'View all posts by %s', 'twentyten' ), get_the_author() ),
+								get_the_author()
+							);
+						?>
+						<span class="meta-sep"> | </span>
+						<?php
+							printf( __( '<span class="meta-prep meta-prep-entry-date">Published </span> <span class="entry-date"><abbr class="published" title="%1$s">%2$s</abbr></span>', 'twentyten'),
+								esc_attr( get_the_time() ),
+								get_the_date()
+							);
+						?>
+						<?php edit_post_link( __( 'Edit', 'twentyten' ), "<span class=\"meta-sep\">|</span>\n\t\t\t\t\t\t<span class=\"edit-link\">", "</span>\n\t\t\t\t\t" ); ?>
+					</div><!-- .entry-meta -->
 					<div class="entry-utility">
 					<?php
 						$tag_list = get_the_tag_list();

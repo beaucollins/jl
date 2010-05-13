@@ -23,13 +23,6 @@
 				<div id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 					<h1 class="entry-title"><?php the_title(); ?></h1>
 
-					<div class="entry-meta">
-						<span class="meta-prep meta-prep-author"><?php _e( 'Posted by ', 'twentyten' ); ?></span>
-						<span class="author vcard"><a class="url fn n" href="<?php echo get_author_posts_url( get_the_author_meta( 'ID' ) ); ?>" title="<?php printf( esc_attr__( 'View all posts by %s', 'twentyten' ), get_the_author() ); ?>"><?php the_author(); ?></a></span>
-						<span class="meta-sep"><?php _e( ' on ', 'twentyten' ); ?> </span>
-						<a href="<?php the_permalink(); ?>" title="<?php the_time(); ?>" rel="bookmark"><span class="entry-date"><?php echo get_the_date(); ?></span></a>
-						<?php edit_post_link( __( 'Edit', 'twentyten' ), "<span class=\"meta-sep\">|</span>\n\t\t\t\t\t\t<span class=\"edit-link\">", "</span>\n\t\t\t\t\t" ); ?>
-					</div><!-- .entry-meta -->
 
 					<div class="entry-content">
 						<?php the_content(); ?>
@@ -51,6 +44,13 @@
 					</div><!-- .entry-author-info -->
 <?php endif; ?>
 
+        	<div class="entry-meta">
+        		<span class="meta-prep meta-prep-author"><?php _e( 'Posted by ', 'twentyten' ); ?></span>
+        		<span class="author vcard"><a class="url fn n" href="<?php echo get_author_posts_url( get_the_author_meta( 'ID' ) ); ?>" title="<?php printf( esc_attr__( 'View all posts by %s', 'twentyten' ), get_the_author() ); ?>"><?php the_author(); ?></a></span>
+        		<span class="meta-sep"><?php _e( ' on ', 'twentyten' ); ?> </span>
+        		<a href="<?php the_permalink(); ?>" title="<?php the_time(); ?>" rel="bookmark"><span class="entry-date"><?php echo get_the_date(); ?></span></a>
+        		<?php edit_post_link( __( 'Edit', 'twentyten' ), "<span class=\"meta-sep\">|</span>\n\t\t\t\t\t\t<span class=\"edit-link\">", "</span>\n\t\t\t\t\t" ); ?>
+        	</div><!-- .entry-meta -->
 					<div class="entry-utility">
 					<?php
 						$tag_list = get_the_tag_list('', ', ');

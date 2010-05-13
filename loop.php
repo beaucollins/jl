@@ -25,18 +25,6 @@
 		<div id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 			<h2 class="entry-title"><a href="<?php the_permalink(); ?>" title="<?php printf( esc_attr__( 'Permalink to %s', 'twentyten' ), the_title_attribute( 'echo=0' ) ); ?>" rel="bookmark"><?php the_title(); ?></a></h2>
 
-			<div class="entry-meta">
-				<?php
-					printf( __( '<span class="meta-prep meta-prep-author">Posted on </span><a href="%1$s" title="%2$s" rel="bookmark"><span class="entry-date">%3$s</span></a> <span class="meta-sep"> by </span> <span class="author vcard"><a class="url fn n" href="%4$s" title="%5$s">%6$s</a></span>', 'twentyten' ),
-						get_permalink(),
-						esc_attr( get_the_time() ),
-						get_the_date(),
-						get_author_posts_url( get_the_author_meta( 'ID' ) ),
-						sprintf( esc_attr__( 'View all posts by %s', 'twentyten' ), get_the_author() ),
-						get_the_author()
-					);
-				?>
-			</div><!-- .entry-meta -->
 
 			<div class="entry-content">
 				<div class="gallery-thumb">
@@ -63,6 +51,18 @@
 				<a href="<?php echo $category_link; ?>" title="<?php esc_attr_e( 'View posts in the Gallery category', 'twentyten' ); ?>"><?php _e( 'More Galleries', 'twentyten' ); ?></a>
 				<?php edit_post_link( __( 'Edit', 'twentyten' ), '<span class="meta-sep">|</span> <span class="edit-link">', '</span>' ); ?>
 			</div><!-- #entry-utility -->
+			<div class="entry-meta">
+				<?php
+					printf( __( '<span class="meta-prep meta-prep-author">Posted on </span><a href="%1$s" title="%2$s" rel="bookmark"><span class="entry-date">%3$s</span></a> <span class="meta-sep"> by </span> <span class="author vcard"><a class="url fn n" href="%4$s" title="%5$s">%6$s</a></span>', 'twentyten' ),
+						get_permalink(),
+						esc_attr( get_the_time() ),
+						get_the_date(),
+						get_author_posts_url( get_the_author_meta( 'ID' ) ),
+						sprintf( esc_attr__( 'View all posts by %s', 'twentyten' ), get_the_author() ),
+						get_the_author()
+					);
+				?>
+			</div><!-- .entry-meta -->
 		</div>
 
 <?php /* How to display posts in the asides category */ ?>
@@ -98,18 +98,6 @@
 		<div id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 			<h2 class="entry-title"><a href="<?php the_permalink(); ?>" title="<?php printf( esc_attr__( 'Permalink to %s', 'twentyten' ), the_title_attribute( 'echo=0' ) ); ?>" rel="bookmark"><?php the_title(); ?></a></h2>
 
-			<div class="entry-meta">
-				<?php
-					printf( __( '<span class="meta-prep meta-prep-author">Posted on </span><a href="%1$s" title="%2$s" rel="bookmark"><span class="entry-date">%3$s</span></a> <span class="meta-sep"> by </span> <span class="author vcard"><a class="url fn n" href="%4$s" title="%5$s">%6$s</a></span>', 'twentyten' ),
-						get_permalink(),
-						esc_attr( get_the_time() ),
-						get_the_date(),
-						get_author_posts_url( get_the_author_meta( 'ID' ) ),
-						sprintf( esc_attr__( 'View all posts by %s', 'twentyten' ), get_the_author() ),
-						get_the_author()
-					);
-				?>
-			</div><!-- .entry-meta -->
 
 	<?php if ( is_archive() || is_search() ) : //Only display Excerpts for archives & search ?>
 			<div class="entry-summary">
@@ -122,6 +110,18 @@
 			</div><!-- .entry-content -->
 	<?php endif; ?>
 
+	<div class="entry-meta">
+		<?php
+			printf( __( '<span class="meta-prep meta-prep-author">Posted on </span><a href="%1$s" title="%2$s" rel="bookmark"><span class="entry-date">%3$s</span></a> <span class="meta-sep"> by </span> <span class="author vcard"><a class="url fn n" href="%4$s" title="%5$s">%6$s</a></span>', 'twentyten' ),
+				get_permalink(),
+				esc_attr( get_the_time() ),
+				get_the_date(),
+				get_author_posts_url( get_the_author_meta( 'ID' ) ),
+				sprintf( esc_attr__( 'View all posts by %s', 'twentyten' ), get_the_author() ),
+				get_the_author()
+			);
+		?>
+	</div><!-- .entry-meta -->
 	<div class="entry-utility">
 		<span class="cat-links"><span class="entry-utility-prep entry-utility-prep-cat-links"><?php _e( 'Posted in ', 'twentyten' ); ?></span><?php the_category( ', ' ); ?></span>
 		<span class="meta-sep"> | </span>
