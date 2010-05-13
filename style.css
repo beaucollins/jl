@@ -198,7 +198,7 @@ div.menu,
 
 /* Main global 'theme' and typographic styles  */
 body {
-	background: #787878;
+	background: url(./images/texture.png) center top #787878;
 }
 body, input, textarea {
 	color: #666;
@@ -321,8 +321,8 @@ a:hover {
 -------------------------------------------------------------- */
 
 #header {
-	margin-top: 20px;
-	padding: 30px 0 0 0;
+	padding: 50px 0 0 0;
+	background: url(./images/masthead-shadow.png) no-repeat top center;
 }
 #site-title {
 	margin: 0 0 18px 0;
@@ -335,6 +335,10 @@ a:hover {
 	font-weight: bold;
 	text-decoration: none;
 	font-weight: normal;
+	background: url(./images/jeremyleffel.gif) no-repeat center center;
+	text-indent: -9999px;
+	display: block;
+	overflow: hidden;
 }
 #site-description {
 	clear: right;
