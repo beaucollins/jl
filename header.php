@@ -7,7 +7,7 @@
 		if ( is_single() ) {
 			single_post_title(); echo ' | '; bloginfo( 'name' );
 		} elseif ( is_home() || is_front_page() ) {
-			bloginfo( 'name' ); echo ' | '; bloginfo( 'description' ); twentyten_the_page_number();
+			bloginfo( 'name' );  twentyten_the_page_number();
 		} elseif ( is_page() ) {
 			single_post_title( '' ); echo ' | '; bloginfo( 'name' );
 		} elseif ( is_search() ) {
@@ -36,7 +36,6 @@
 					<div id="site-title"><span><a href="<?php echo home_url( '/' ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></span></div>
 				<?php } ?>
 				
-        <!-- <div id="site-description"><?php bloginfo( 'description' ); ?></div> -->
 				<?php
 					// Check if this is a post or page, if it has a thumbnail, and if it's a big one
 					if ( 	is_home()) : ?>
