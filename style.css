@@ -322,7 +322,9 @@ a:hover {
 
 #header {
 	padding: 50px 0 0 0;
-	background: url(./images/masthead-shadow.png) no-repeat top center;
+}
+body.home #header {
+  background: url(./images/masthead-shadow.png) no-repeat top center;
 }
 #site-title {
 	margin: 0 0 18px 0;
